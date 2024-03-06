@@ -25,7 +25,7 @@ from backend.utils import format_as_ndjson, format_stream_response, generateFilt
 bp = Blueprint("routes", __name__, static_folder="static", template_folder="static")
 
 # UI configuration (optional)
-UI_TITLE = "USACE JAQI Bot"
+UI_TITLE = "USACE JAQI Bot(Demo, Unclassified)"
 UI_LOGO = "/castle.jpg"
 UI_CHAT_LOGO = "/castle.jpg"
 UI_CHAT_TITLE = "Ask me anything related to construction regulations & policy!"

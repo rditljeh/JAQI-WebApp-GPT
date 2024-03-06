@@ -26,8 +26,8 @@ bp = Blueprint("routes", __name__, static_folder="static", template_folder="stat
 
 # UI configuration (optional)
 UI_TITLE = "USACE JAQI Bot"
-UI_LOGO = "castle.jpg"
-UI_CHAT_LOGO = "castle.jpg"
+UI_LOGO = "/castle.jpg" or
+UI_CHAT_LOGO = "/castle.jpg"
 UI_CHAT_TITLE = "Ask me anything related to construction regulations & policy!"
 UI_CHAT_DESCRIPTION = "I am configured to write an article to answer your questions"
 UI_FAVICON = "/favicon.ico"
@@ -47,6 +47,10 @@ async def index():
 @bp.route("/favicon.ico")
 async def favicon():
     return await bp.send_static_file("favicon.ico")
+
+@bp.route("/castle.jpg")
+async def castle():
+    return await bp.send_static_file("castle.jpg")
 
 @bp.route("/assets/<path:path>")
 async def assets(path):

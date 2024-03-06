@@ -26,8 +26,8 @@ bp = Blueprint("routes", __name__, static_folder="static", template_folder="stat
 
 # UI configuration (optional)
 UI_TITLE = "USACE JAQI Bot"
-UI_LOGO = "castle.png"
-UI_CHAT_LOGO = "castle.png"
+UI_LOGO = "castle.jpg"
+UI_CHAT_LOGO = "castle.jpg"
 UI_CHAT_TITLE = "Ask me anything related to construction regulations & policy!"
 UI_CHAT_DESCRIPTION = "I am configured to write an article to answer your questions"
 UI_FAVICON = "/favicon.ico"

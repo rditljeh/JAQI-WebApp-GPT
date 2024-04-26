@@ -25,11 +25,11 @@ from backend.utils import format_as_ndjson, format_stream_response, generateFilt
 bp = Blueprint("routes", __name__, static_folder="static", template_folder="static")
 
 # UI configuration (optional)
-UI_TITLE = "USACE Jobsite Assisted Quality Intelligence Bot (Demo, Unclassified)"
+UI_TITLE = "USACE Jobsite Assisted Quality Intelligence ChatBot (Demo, Unclassified)"
 UI_LOGO = "/castle.jpg"
 UI_CHAT_LOGO = "/castle.jpg"
 UI_CHAT_TITLE = "Ask me anything related to Construction Management regulations & policy!"
-UI_CHAT_DESCRIPTION = "I am configured answer your questions with a short response and provide references as well."
+UI_CHAT_DESCRIPTION = "I am configured to answer your questions with a short response based on documents about UFGS, RMS, UFC, ER, EM, etc."
 UI_FAVICON = "/favicon.ico"
 UI_SHOW_SHARE_BUTTON = os.environ.get("UI_SHOW_SHARE_BUTTON", "true").lower() == "true"
 

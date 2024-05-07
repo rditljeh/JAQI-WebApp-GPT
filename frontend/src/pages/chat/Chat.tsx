@@ -236,6 +236,7 @@ const Chat = () => {
                 }
                 conversation.messages.push(toolMessage, assistantMessage)
                 appStateContext?.dispatch({ type: 'UPDATE_CURRENT_CHAT', payload: conversation });
+                window.alert(conversation)
                 setMessages([...messages, toolMessage, assistantMessage]);
             }
 

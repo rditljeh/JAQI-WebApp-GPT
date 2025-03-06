@@ -752,7 +752,7 @@ const Chat = () => {
                                         }
                                     }}
                                     className={appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured ? styles.clearChatBroom : styles.clearChatBroomNoCosmos}
-                                    {/* iconProps={{ iconName: 'Broom' }} replace with static */}
+                                    iconProps={{ iconName: 'Broom' }}
                                     
                                     text={"Clear Chat"}
                                     onClick={appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured ? clearChat : newChat}

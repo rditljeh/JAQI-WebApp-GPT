@@ -728,7 +728,9 @@ const Chat = () => {
                                         }
                                     }}
                                     className={styles.newChatIcon}
-                                    iconProps={{ iconName: 'Add' }}
+                                    {/* iconProps={{ iconName: 'Add' }} replace with static */}
+                                    
+                                    text = {"Start a New Chat"}
                                     onClick={newChat}
                                     disabled={disabledButton()}
                                     aria-label="start a new chat button"
@@ -751,7 +753,9 @@ const Chat = () => {
                                         }
                                     }}
                                     className={appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured ? styles.clearChatBroom : styles.clearChatBroomNoCosmos}
-                                    iconProps={{ iconName: 'Broom' }}
+                                    {/* iconProps={{ iconName: 'Broom' }} replace with static */}
+                                    
+                                    text={"Clear Chat"}
                                     onClick={appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured ? clearChat : newChat}
                                     disabled={disabledButton()}
                                     aria-label="clear chat button"

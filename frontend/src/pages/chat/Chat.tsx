@@ -728,8 +728,7 @@ const Chat = () => {
                                         }
                                     }}
                                     className={styles.newChatIcon}
-                                    {/* iconProps={{ iconName: 'Add' }} replace with static */}
-                                    
+                                    iconProps={{ iconName: 'Add' }}
                                     text = {"Start a New Chat"}
                                     onClick={newChat}
                                     disabled={disabledButton()}

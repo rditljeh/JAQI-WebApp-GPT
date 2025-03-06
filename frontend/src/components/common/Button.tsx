@@ -12,7 +12,7 @@ export const ShareButton: React.FC<ButtonProps> = ({ onClick, text }) => {
   return (
     <CommandBarButton
       className={styles.shareButtonRoot}
-      iconProps={{ iconName: 'Share' }}
+      {/* iconProps={{ iconName: 'Share' }} replace with static*/}
       onClick={onClick}
       text={text}
     />
@@ -24,7 +24,7 @@ export const HistoryButton: React.FC<ButtonProps> = ({ onClick, text }) => {
     <DefaultButton
       className={styles.historyButtonRoot}
       text={text}
-      iconProps={{ iconName: 'History' }}
+      {/* iconProps={{ iconName: 'History' }} replace with static*/}
       onClick={onClick}
     />
   )

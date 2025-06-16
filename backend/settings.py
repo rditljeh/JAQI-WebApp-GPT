@@ -41,13 +41,13 @@ class _UiSettings(BaseSettings):
         env_ignore_empty=True
     )
 
-    title: str = "Contoso"
+    title: str = "Jobsite Assisted Quality Intelligence Chatbot"
     logo: Optional[str] = None
     chat_logo: Optional[str] = None
-    chat_title: str = "Start chatting"
-    chat_description: str = "This chatbot is configured to answer your questions"
+    chat_title: str = "UNCLASSIFIED - VERIFY ALL ANSWERS BEFORE OFFICIAL USE"
+    chat_description: str = "This chatbot is configured to answer questions related to construction management based on USACE doctrine."
     favicon: str = "/favicon.ico"
-    show_share_button: bool = True
+    show_share_button: bool = False
     show_chat_history_button: bool = True
 
 
